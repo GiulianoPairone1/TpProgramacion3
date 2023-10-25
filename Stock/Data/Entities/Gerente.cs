@@ -2,10 +2,6 @@
 {
     public class Gerente:User
     {
-        public Gerente( int id , string name) 
-        {
-            Id = id;
-            Name = name;
-        }
+        public ICollection<Subject> Subjects { get; set; } = new List<Subject>();
     }
 }
